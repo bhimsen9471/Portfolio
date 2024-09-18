@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/db098c9a92.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav >
+                
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">My Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Bhimsen </span><br>Kumar From India</h1>
+
+            </div>
+        </div>
+    </div>
+             <!------------- about --------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I'm Bhimsen!  Thank you for visiting my portfolio. I'm currently pursuing a Master's in Computer Applications (MCA)
+                         from Jawaharlal Nehru University (JNU). and I'm excited to share my journey in software development with you.
+                          My journey in technology and
+                          software development has allowed me to explore various aspects of programming, problem-solving,
+                           and software design. I am passionate about building efficient and scalable web applications
+                            and continuously learning about new tools and technologies.
+                            <br><br>Feel free to explore my projects, skills, Education and the experiences that have shaped me into a passionate tech enthusiast.</p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>   
+
+                            </div>
+
+                            <div class="tab-contents active-tab" id="skills"> 
+                                <ul>
+                                <li><span>Prpgramming Languages</span><br>C, Java, Html, CSS, JavaScript</li>
+                                <li><span>Frameworks & Libraries</span><br>React.js, Node.js, Express.js, Bootstrap, Tailwand</li>
+                                <li><span>Databases & Tools</span><br>MySQL, MongoDB, Git&GitHub, VS Code</li>
+                                <li><span>CS Fundamentals</span><br>Oops, DBMS, Operating System</li>
+                            </ul>
+                            </div>
+
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                <li><span>2017</span><br>Matriculation =><i>9.8/10.0 cgpa</i></li>
+                                <li><span>2019</span><br>Intermediate =><i>64%</i></li>
+                                <li><span>2022</span><br>Graduated in Bsc.(Electronics) =><i>65.66%</i></li>
+                                <li><span>2023-2025</span><br>Master's of Computer Applications =><i>7.06/9.0 cgpa</i></li>
+                            </ul>
+                            </div>
+
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                <li><span>Freshers</span><br>Works on own Poject</li>
+                                
+                            </ul>
+                            </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------- services -------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-duotone fa-solid fa-crop"></i>
+                    <h2>Full-Stack Development</h2>
+                    <p>I create responsive, user-friendly websites and web applications using modern technologies
+                        With knowledge of both front-end and back-end technologies, I develop complete web solutions. From building intuitive user interfaces to setting up server-side operations with Node.js and Express.js,
+                         I provide a full-stack approach for your project.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>API Development & Integration</h2>
+                    <p>I develop RESTful APIs to connect applications and integrate third-party services. Whether you need custom APIs or integration with existing platforms, I can handle the back-end logic and 
+                        data flow to power your apps</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database Management</h2>
+                    <p>I design and implement databases using MySQL and MongoDB to ensure your application's data is stored, managed, and retrieved efficiently. Whether it's setting up relational or non-relational databases,
+                         I ensure smooth data operations.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------portfolio-------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Project</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="house.jpg" alt="">
+                    <div class="layer">
+                        <h3>House Rental App</h3>
+                        <p>A user-friendly platform designed to simplify the process of renting 
+                            homes and vacation properties. The app allows users to browse a wide variety of available houses, apartments, 
+                            and vacation homes based on location, price, and amenities. </p>
+                            <a href="https://house-project.onrender.com"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="music1.avif" alt="">
+                    <div class="layer">
+                        <h3>Musical App</h3>
+                      <p>An all-in-one platform for discovering, streaming, and enjoying music 
+                        from a vast library of tracks, albums, and playlists.</p>
+                            <a href="https://bhimsen9471.github.io/Music-Album/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="book2.avif" alt="">
+                    <div class="layer">
+                        <h3>Book Store webApp</h3>
+                      <p>A comprehensive full-stack application designed for browsing, selling purchasing, and managing old books online.</p>
+                            <a href="https://bhimsen9471.github.io/BOOK-DEALING-WEB/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+   <!-- ------------------contact------------------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> monu94710@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 9471052233</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100013782188835"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/adityaraj94710/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/bhimsen-kumar-220a55194/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/bhimsen9471"><i class="fa-brands fa-github"></i></a>
+                </div>
+
+                <a href="resume.pdf" download class="btn btn2">Download CV</a>
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                    
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright @ <b>Bhimsen.</b> Made with <i class="fa-solid fa-heart"></i></p>
+
+    </div>
+
+ </div>
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+
+    <script>
+     var sidemenu = document.getElementById("sidemenu");
+
+     function openmenu(){
+        sidemenu.style.right = "0";
+     }
+     function closemenu(){
+        sidemenu.style.right = "-200px";
+     }
+
+
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxTCZ-ttYocQlOogzDMPGra5oDjLIJ_Z4_foUhvTsCp26PzVpD36oiVV9F708DPRjDq/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function() {
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+
+</body>
+</html>
